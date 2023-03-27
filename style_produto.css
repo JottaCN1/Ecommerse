@@ -1,0 +1,280 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #fafafa;
+}
+
+header {
+    width: 100%;
+    height: 10%;
+    background:rgb(171, 202, 242);
+}
+header img{
+    padding-left: 15px;
+}
+header p{
+    padding: 0px 15px;
+}
+
+section {
+    border-color: rgb(171, 202, 242);
+    border-style:solid;
+    border-width: 1px;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 4%;
+    margin-bottom: 5%;
+}
+
+/* cabeçalho */
+.pageup{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+}
+.pageup a img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.pageup a img {
+    height: 50px;
+    width: 50px;
+}
+
+.encaminhar{
+    padding-top: 1px;
+    padding-left: 57%;
+    font-size: 27px;
+}
+.encaminhar a{
+    margin-left: 59px;
+}
+.encaminhar a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin-right: 4px;
+    border-radius: 300px;
+    transition: 0.6s;
+}
+.encaminhar a:hover{
+    background-color: rgb(158, 193, 240);
+}
+
+.icon {
+    padding-top: 1px;
+    padding-left: 50px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+.icon2 {
+    padding-top: 1px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+}
+/* final cabeçalho */
+
+main {
+    padding-top: 2%;
+}
+
+/* esquerdo e imgs */
+esquerdo {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.imgprin {
+    max-width: 1000px;
+    
+}
+.imgprin img {
+    width: 95%;
+    margin-left: 20%;
+}
+
+.imgs {
+    display: flex;
+    max-width: 1000px;
+    justify-content: space-evenly;
+    gap: 5px;
+    margin-left: 35%;
+}
+.img img {
+    width: 95%;
+    border-radius: 5px;   
+}
+
+.conteiner {
+    display: flex;
+    width: 100%;
+    height: calc(75vh - 85px);
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+.items {
+    align-self: flex-end;
+}
+/* final esquerdo e imgs */
+/* centro */
+.text-sobre {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 5%;
+}
+
+.centro p {
+    margin-left: 27%;
+}
+
+.text-sobre span {
+    display: flex;
+    flex-direction: column;
+}
+
+.branco {
+    background-color: rgb(171, 202, 242);
+    width: 20%;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 23%;
+}
+
+
+.cinza {
+    background-color: rgba(139, 142, 142, 0.505);
+    width: 20%;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 23%;
+}
+
+.centro {
+    width: 100%;
+}
+
+.centro h1 {
+    padding-bottom: 5%;
+    margin-left: 23%;
+}
+/* final centro */
+/* Direito */
+.borda-di {
+    border-color: rgb(57, 107, 194);
+    border-style:solid;
+    border-width: 1px;    
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-right: 5%;
+    border-radius: 4px;
+}
+
+.direito h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    padding-top: 2%;
+}
+.estoque {
+    color: green;
+}
+.preconovo {
+    font-size: 50px;
+}
+.preco {
+    font-size: 10px;
+    margin-left: 10px;
+}
+.parc {
+    font-size: 15px;
+    padding-left: 3px;
+}
+.direito a {
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    align-items: center;
+    display: flex;
+    gap: 5px;
+    border-radius: 20px;
+    margin-top: 7%;
+    margin-bottom: 7%;
+}
+.direito a:hover {
+    background-color: rgb(57, 107, 194);
+}
+/* Final direito */
+/* produtos */
+.abaixo{
+    padding-top: 3%;
+}
+
+.abaixo h1{ 
+    color: rgb(88, 112, 219);
+}
+
+#produtos {
+    margin-left: 12%;
+    display: flex;
+}
+
+.produto1, .produto2, .produto3 {
+    text-align: center;
+    padding-left: 8%;
+}
+.produto1 a:hover, .produto2 a:hover, .produto3 a:hover {
+    background-color: #0080FF;
+    font-size: 5px;
+}
+
+.precos { 
+    color: #A4A4A4; 
+}
+
+.abaixo span { 
+    color: #0080FF; 
+}
+
+.prod p { 
+    color:  #0080FF; text-transform: uppercase;
+}
+/* final produtos */
+/* respansividade */
+@media only screen and (min-width: 900px) and (max-width: 1600px) {  
+    .branco {
+        width: 30vh;;
+    }
+    
+    .cinza {
+        width: 30vh;
+    }
+
+    .produto1, .produto2, .produto3 {
+        text-align: center;
+        padding-left: 6%;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .branco {
+        width: 35vh;
+    }
+    
+    .cinza {
+        width: 35vh;
+    }
+
+    .produto1, .produto2, .produto3 {
+        text-align: center;
+        padding-left: 7%;
+    }
+}
+/* final respansividade */
